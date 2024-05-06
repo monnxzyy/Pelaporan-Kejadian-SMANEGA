@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Insiden Sekolah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Laporan Insiden Sekolah</h1>
+    <form id="incidentForm" action="submit.php" method="post" enctype="multipart/form-data">
+        <label for="name">Nama Pelapor:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="date">Tanggal Insiden:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <label for="description">Deskripsi Insiden:</label>
+        <textarea id="description" name="description" required></textarea>
+        
+        <label for="photo">Foto Insiden:</label>
+        <input type="file" id="photo" name="photo" accept="image/*">
+        
+        <button type="submit">Laporkan</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
